@@ -4,5 +4,10 @@ var app = new Vue (
         data: {
             albums: []
         },
+        mounted: {
+            getAlbumsFromAPI() {
+                axios.get()
+            }
+        }
     }
 );
