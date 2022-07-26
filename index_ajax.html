@@ -24,47 +24,54 @@
 </head>
 <body>
     
+    <!-- Vue -->
     <div id="root">
+
         <!-- Header -->
-    <header>
-        <div class="img-container">
+        <header>
+            <div class="img-container">
 
-            <!-- Logo -->
-            <img src="./img/spotify-logo.png" alt="spotify-logo">
-        </div>
-    </header>
+                <!-- Logo -->
+                <img src="./img/spotify-logo.png" alt="spotify-logo">
+            </div>
+        </header>
 
-    <!-- Main -->
-    <main>
+        <!-- Main -->
+        <main>
 
-        <!-- Album -->
-        <div class="product-card-container">
-            <div class="product-card">
+            <!-- Album -->
+            <div class="product-card-container">
+                
+                <!-- Ciclo V-for -->
+                <div 
+                    v-for="album in albums"
+                    class="product-card">
 
-                <!-- Image -->
-                <div class="img-wrapper">
-                    <img src="" alt="poster">
-                </div>
+                    <!-- Image -->
+                    <div class="img-wrapper">
+                        <img :src="album.poster" alt="poster">
+                    </div>
 
-                <!-- Title -->
-                <h3 class="title">
-                    
-                </h3>
+                    <!-- Title -->
+                    <h3 class="title">
+                        {{ album.title }}
+                    </h3>
 
-                <!-- Author -->
-                <div class="author">
-                    
-                </div>
+                    <!-- Author -->
+                    <div class="author">
+                        {{ album.author }}
+                    </div>
 
-                <!-- Year -->
-                <div class="year">
-                    
+                    <!-- Year -->
+                    <div class="year">
+                        {{ album.year }}
+                    </div>
                 </div>
             </div>
-        </div>
-    </main>
+        </main>
     </div>
 
+    <!-- Javascript -->
     <script src="js/script.js"></script>
 </body>
 </html>

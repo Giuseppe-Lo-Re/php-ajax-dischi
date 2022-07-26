@@ -39,6 +39,7 @@
             <!-- Ciclo Foreach -->
             <?php foreach($albums as $album) { ?>
 
+                <!-- Album -->
                 <div class="product-card">
 
                     <!-- Image -->
@@ -65,6 +66,7 @@
         </div>
     </main>
 
+    <!-- Javascript -->
     <script src="js/script.js"></script>
 </body>
 </html>

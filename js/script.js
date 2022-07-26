@@ -4,10 +4,11 @@ var app = new Vue (
         data: {
             albums: []
         },
-        mounted: {
-            getAlbumsFromAPI() {
-                axios.get()
-            }
+        mounted() {
+            axios.get('http://localhost:8888/%20php-ajax-dischi/api.php')
+            .then((response) => {
+                this.albums = response.data;
+            });
         }
     }
 );
