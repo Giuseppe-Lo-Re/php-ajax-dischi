@@ -4,3 +4,75 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+
+body {
+    background-color: #1d2d3b;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* COMMON */
+.title,
+.author,
+.year {
+    text-align: center;
+}
+.author,
+.year {
+    color: #787876;
+    font-size: 15px;
+}
+
+
+/* HEADER */
+header {
+    height: 50px;
+    background-color: #2d3a46;
+}
+
+header .img-container img {
+    width: 40px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+/* MAIN */
+.product-card-container {
+    width: calc((100% / 6) - 10px);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.product-card { 
+    background-color: #2d3a46;
+    padding: 20px;
+    margin: 15px;
+    min-height: 320px;
+}
+
+.title {
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    min-height: 100px;
+}
+
+.img-wrapper img {
+    width: 150px;
+    height: 150px;
+}
+
+.card-container .artist {
+    font-size: 15px;
+    padding-top: 15px;
+}
+
+.card-container .year {
+    font-size: 13px;
+    padding-bottom: 50px;
+} 
